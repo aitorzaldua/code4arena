@@ -1,12 +1,12 @@
-#### 1.- Click en: https://code4rena.com/contests/2023-04-ens-contest
+### 1.- Click en: https://code4rena.com/contests/2023-04-ens-contest
 
-#### 2.- Ir donde pone scope: Aquí están los contratos a vigilar.
+### 2.- Ir donde pone scope: Aquí están los contratos a vigilar.
 
 2.1.- Con click en cada contrato sale el código de cada uno de ellos.
 
 2.2.- El contrato empieza con la palabra "contract" o "library", lo anterior, no importa.
 
-#### 3.- Vulnerabilidad 1: Las variables
+### 3.- Vulnerabilidad 1: Las variables
 
 3.1.- Buscar las palabras "uint" - "uint<número>" - "string" - "address" - "bytes"
 
@@ -16,7 +16,7 @@
 
 3.4.- Si están agrupadas, la notación normal es tal que "13..21", es decir, hay variables de la 13 a la 21.
 
-#### 4.- Vulnerabilidad 2: emit 
+### 4.- Vulnerabilidad 2: emit 
 
 4.1.- Buscar la palabra emit
 
@@ -24,7 +24,7 @@
 
 4.3.- Ejemplo: "emit(aaa, bbb, CCCC, ddd);"
 
-#### 5.- 
+### 5.- Vulnerabilidad 3:
 
 
 
