@@ -1,6 +1,6 @@
 import "../registry/ENS.sol";
 import "./IBaseRegistrar.sol";
-import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+import "@openzeppelin-contracts/contracts/token/ERC721/IERC721.sol";
 
 interface IBaseRegistrar is IERC721 {
     event ControllerAdded(address indexed controller);
