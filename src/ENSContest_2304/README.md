@@ -24,7 +24,13 @@
 
     4.3.- Ejemplo: "emit(aaa, bbb, CCCC, ddd);"
 
-### 5.- Vulnerabilidad 3:
+### 5.- Vulnerabilidad 3: uso de "memory" o "storage" para "structs"
+
+    5.1.- Un struct es una variable con varios campos, por ejemplo "struct Superheroe {string name, uint age, string superpower}"
+
+    5.2.- Buscar la palabra "struct" y apuntar la palabra que va a continuacion, que es el nombre del "struct", p.e. "Superheroe"
+
+    5.3.- Ahora hay que buscar esa palabra en el resto del contrato, apuntar la linea.
 
 
 
