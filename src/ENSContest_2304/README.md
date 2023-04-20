@@ -20,7 +20,7 @@
 
     4.1.- Buscar la palabra emit
 
-    4.2.- Si, entre los () hay una palabra en mayúsculas, apuntar
+    4.2.- Si, entre los () hay una palabra en mayúsculas, apuntar la linea.
 
     4.3.- Ejemplo: "emit(aaa, bbb, CCCC, ddd);"
 
