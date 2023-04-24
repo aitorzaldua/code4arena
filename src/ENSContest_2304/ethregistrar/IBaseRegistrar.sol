@@ -1,5 +1,8 @@
-import "../registry/ENS.sol";
-import "./IBaseRegistrar.sol";
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.7;
+
+import "registry/ENS.sol";
+import "IBaseRegistrar.sol";
 import "@openzeppelin-contracts/contracts/token/ERC721/IERC721.sol";
 
 interface IBaseRegistrar is IERC721 {

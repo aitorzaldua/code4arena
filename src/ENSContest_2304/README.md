@@ -36,5 +36,17 @@
 
     6.1.- buscar en el contrato la palabra this.balance y anotar la linea.
 
+### 7.- Vulnerabilidad 5: Buscar abi.encode
+
+    7.1.- Buscar abi.encode ya que debe sustituirse por abi.encodepacked para ahorrar 100 gas.
+
+    7.2.- Anotar la linea.
+
+### 8.- Vulnerabilidad 6: buscar ¡++
+
+     8.1.- Buscar i++ ó i-- ya que debe sustituirse por ++i ó --i, ya que ahorra gas.
+
+     8.2.- Anotar la linea.
+
 
 
