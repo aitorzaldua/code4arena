@@ -1,12 +1,3 @@
-# AUDITORIA ACTUAL: EigenLayer
-
-## LINK: https://code4rena.com/contests/2023-04-eigenlayer-contest
-
-## Descripcion:
-
-EigenLayer is a protocol enabling restaking of staked Ether, to be used as cryptoeconomic security for decentralized protocols and applications.
-
-
 ### 1.- Click en: https://code4rena.com/contests/2023-04-ens-contest
 
 ### 2.- Ir donde pone scope: Aquí están los contratos a vigilar.
