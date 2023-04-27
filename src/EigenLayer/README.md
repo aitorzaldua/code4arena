@@ -18,7 +18,7 @@ EigenLayer ofrece seguridad en ese tipo de operaciones de forma que la empresa M
 
    Un struct es una variable con varios campos, por ejemplo:
 
-```
+
     struct RRIterator {
         bytes data;
         uint256 offset;
@@ -28,22 +28,21 @@ EigenLayer ofrece seguridad en ese tipo de operaciones de forma que la empresa M
         uint256 rdataOffset;
         uint256 nextOffset;
     }
-```
-
 
     Posteriormente, se usa en una función, por ejemplo:
-```
+
+
     function iterateRRs(bytes memory self, uint256 offset) internal pure returns (RRIterator memory ret) {
         ret.data = self;
         ret.nextOffset = offset;
         next(ret);
     }
-```
 
-    Como se ve, se llama al struct RRIterator como ```RRIterator memory ret```
+    Como se ve, se llama al struct RRIterator como "RRIterator memory ret"
 
     Hay que Buscar la palabra "struct" y apuntar la palabra que va a continuacion, que es el nombre del "struct", p.e. "RRIterator"
 
     Ahora hay que buscar esa palabra en el resto del contrato, dentro de una funcion posiblemente, apuntar la linea.
 
-    La vulnerabilidad: Si se usan todos los campos del struct hay que llamarla como ```RRIterator memory ret``` y, si no, ```RRIterator storage ret``` para ahorrar gas.
+    La vulnerabilidad: Si se usan todos los campos del struct hay que llamarla como "RRIterator memory ret" y, si no, "RRIterator storage ret" para ahorrar gas.
+
