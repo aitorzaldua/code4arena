@@ -14,9 +14,9 @@ EigenLayer ofrece seguridad en ese tipo de operaciones de forma que la empresa M
 
 ## Vulnerabilidades de ahorro de GAS: 
 
-### 1 - Uso de "memory" o "storage" para "structs"
+### 1.- Uso de "memory" o "storage" para "structs"
 
-   Un struct es una variable con varios campos, por ejemplo:
+1.1.- Un struct es una variable con varios campos, por ejemplo:
 
 
     struct RRIterator {
@@ -29,7 +29,7 @@ EigenLayer ofrece seguridad en ese tipo de operaciones de forma que la empresa M
         uint256 nextOffset;
     }
 
-Posteriormente, se usa en una función, por ejemplo:
+1.2.- Posteriormente, se usa en una función, por ejemplo:
 
 
     function iterateRRs(bytes memory self, uint256 offset) internal pure returns (RRIterator memory ret) {
@@ -38,16 +38,22 @@ Posteriormente, se usa en una función, por ejemplo:
         next(ret);
     }
 
-Como se ve, se llama al struct RRIterator como "RRIterator memory ret"
+1.3.- Como se ve, se llama al struct RRIterator como "RRIterator memory ret".
 
-Hay que Buscar la palabra "struct" y apuntar la palabra que va a continuacion, que es el nombre del "struct", p.e. "RRIterator"
+1.4.- Buscar la palabra struct y apuntar la palabra que va a continuacion, p.e., "RRIterator".
 
-Ahora hay que buscar esa palabra en el resto del contrato, dentro de una funcion posiblemente, apuntar la linea.
+1.5.- Buscar esa palabra (RRIterator) en el resto del contrato, dentro de una funcion posiblemente, apuntar la linea.
 
-La vulnerabilidad: Si se usan todos los campos del struct hay que llamarla como "RRIterator memory ret" y, si no, "RRIterator storage ret" para ahorrar gas.
+1.6.- La vulnerabilidad: Si se usan todos los campos del struct hay que llamarla como "RRIterator memory ret" y, si no, "RRIterator storage ret" para ahorrar gas.
 
-### Vulnerabilidad 6: buscar ¡++
+### 2.- Vulnerabilidad 6: buscar ¡++
 
-Buscar i++ ó i-- ya que debe sustituirse por ++i ó --i, ya que ahorra gas.
+2.1.- Buscar i++ ó i-- ya que debe sustituirse por ++i ó --i, ya que ahorra gas.
 
-Anotar la linea.
+2.2.- Anotar la linea.
+
+### 3.-  Buscar abi.encode
+
+3.1.- Buscar abi.encode ya que debe sustituirse por abi.encodepacked para ahorrar 100 gas.
+
+3.2.- Anotar la linea.
