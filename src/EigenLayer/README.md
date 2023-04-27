@@ -14,9 +14,9 @@ EigenLayer ofrece seguridad en ese tipo de operaciones de forma que la empresa M
 
 ## Vulnerabilidades de ahorro de GAS: 
 
-### uso de "memory" o "storage" para "structs"
+### 1 - Uso de "memory" o "storage" para "structs"
 
-    5.1.- Un struct es una variable con varios campos, por ejemplo:
+   Un struct es una variable con varios campos, por ejemplo:
 
     ```struct RRIterator {
         bytes data;
@@ -29,7 +29,7 @@ EigenLayer ofrece seguridad en ese tipo de operaciones de forma que la empresa M
     }
  ```
 
-    5.2.- Posteriormente, se usa en una función, por ejemplo:
+    Posteriormente, se usa en una función, por ejemplo:
     ```
     function iterateRRs(bytes memory self, uint256 offset) internal pure returns (RRIterator memory ret) {
         ret.data = self;
@@ -39,8 +39,8 @@ EigenLayer ofrece seguridad en ese tipo de operaciones de forma que la empresa M
     ```
     Como se ve, se llama al struct RRIterator como ```RRIterator memory ret```
 
-    5.2.- Hay que Buscar la palabra "struct" y apuntar la palabra que va a continuacion, que es el nombre del "struct", p.e. "RRIterator"
+    Hay que Buscar la palabra "struct" y apuntar la palabra que va a continuacion, que es el nombre del "struct", p.e. "RRIterator"
 
-    5.3.- Ahora hay que buscar esa palabra en el resto del contrato, dentro de una funcion posiblemente, apuntar la linea.
+    Ahora hay que buscar esa palabra en el resto del contrato, dentro de una funcion posiblemente, apuntar la linea.
 
-    5.4.- La vulnerabilidad: Si se usan todos los campos del struct hay que llamarla como ```RRIterator memory ret``` y, si no, ```RRIterator storage ret``` para ahorrar gas.
+    La vulnerabilidad: Si se usan todos los campos del struct hay que llamarla como ```RRIterator memory ret``` y, si no, ```RRIterator storage ret``` para ahorrar gas.
