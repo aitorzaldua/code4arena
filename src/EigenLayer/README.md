@@ -18,6 +18,7 @@ EigenLayer ofrece seguridad en ese tipo de operaciones de forma que la empresa M
 
    Un struct es una variable con varios campos, por ejemplo:
 
+```
     struct RRIterator {
         bytes data;
         uint256 offset;
@@ -27,15 +28,17 @@ EigenLayer ofrece seguridad en ese tipo de operaciones de forma que la empresa M
         uint256 rdataOffset;
         uint256 nextOffset;
     }
+```
 
 
     Posteriormente, se usa en una función, por ejemplo:
-   
+```
     function iterateRRs(bytes memory self, uint256 offset) internal pure returns (RRIterator memory ret) {
         ret.data = self;
         ret.nextOffset = offset;
         next(ret);
     }
+```
 
     Como se ve, se llama al struct RRIterator como ```RRIterator memory ret```
 
