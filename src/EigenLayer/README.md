@@ -12,7 +12,7 @@ EigenLayer permite recuperar ese ETH comprometido para hacer staking pero usando
 
 EigenLayer ofrece seguridad en ese tipo de operaciones de forma que la empresa Middleware no sea capaz de generar una estafa a los depositantes.
 
-## Vulnerabilidades de ahorro de GAS:
+## GAS SAVING:
 
 ### 1.- Uso de "memory" o "storage" para "structs"
 
@@ -54,18 +54,27 @@ EigenLayer ofrece seguridad en ese tipo de operaciones de forma que la empresa M
 
 ### 3.-  Buscar la palabra abi.encode
 
-3.1.- Buscar abi.encode ya que debe sustituirse por abi.encodepacked para ahorrar 100 gas.
+3.1.- Buscar `abi.encode` ya que debe sustituirse por abi.encodepacked para ahorrar 100 gas.
 
 3.2.- Anotar la linea.
 
-### 4.- Buscar la palabra emit
+### 4.- Buscar la palabra `emit`
 
-4.1.- Buscar la palabra emit
+4.1.- Buscar la palabra `emit`
 
 4.2.- Si, entre los () hay una palabra en mayúsculas, apuntar la linea.
 
-4.3.- Ejemplo: "emit(aaa, bbb, CCCC, ddd);"
+4.3.- Ejemplo: `emit(aaa, bbb, CCCC, ddd);`
 
-## Vulnerabilidades LOW:
+## LOW RISK:
+
+## MEDIUM RISK:
+
+## HIGH RISK:
+
+1.- **`transferFrom` : The `_from` parameter should be `msg.sender`**
+
+**keyword: `transferFrom`**  o **`safeTransferFrom`**
+
 
 
