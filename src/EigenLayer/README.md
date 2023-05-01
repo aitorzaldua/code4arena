@@ -54,7 +54,7 @@ EigenLayer ofrece seguridad en ese tipo de operaciones de forma que la empresa M
 
 ### 3.-  **Buscar la palabra `abi.encode`**
 
-3.1.- Buscar `abi.encode` ya que debe sustituirse por abi.encodepacked para ahorrar 100 gas.
+3.1.- Buscar `abi.encode` ya que debe sustituirse por `abi.encodepacked` para ahorrar 100 gas.
 
 3.2.- Anotar la linea.
 
@@ -70,15 +70,31 @@ EigenLayer ofrece seguridad en ese tipo de operaciones de forma que la empresa M
 
 ## MEDIUM RISK:
 
+### 1.- Buscar `==`o `!=`
+
+1.1.- Esos simbolos indican "igualdad estricta" o "desigualdad estricta"
+
+1.2.- El uso de ellos con tokens o ETH puede llevar a comportamientos anomalos. Es mejor usar `>=`o `<=`
+
+1.3.- Buscar `==`o `!=` y apuntar la linea.
+
+### 2.- Buscar `selfdestruct`
+
+2.1.- Esta instrucción va a desaparecer cuando se implemente el cambio EIP-4758
+
+2.2.- Buscar y apuntar la linea
+
 ## HIGH RISK:
 
-1.- **Buscar las palabras `transferFrom`  o `safeTransferFrom`**
+### 1.- **Buscar las palabras `transferFrom`  o `safeTransferFrom`**
 
 1.1.- Buscar `transferFrom`  o `safeTransferFrom`
 
 1.2.- Anotar la linea.
 
 1.3.- La vulnerabilidad viene cuando el `_from`no es el `msg.sender`
+
+
 
 
 
