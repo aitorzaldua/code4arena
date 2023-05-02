@@ -14,3 +14,11 @@ Contract: https://github.com/code-423n4/2023-04-eigenlayer/blob/main/src/contrac
 
 `276: bytes32 domain_separator = keccak256(abi.encode(DOMAIN_TYPEHASH, keccak256(bytes("EigenLayer")), block.chainid, address(this)));`
 
+`879: abi.encode(` Note: the function is returning a byte32 variable.
+
+Contract: https://github.com/code-423n4/2023-04-eigenlayer/blob/main/src/contracts/pods/EigenPodManager.sol
+
+`175: abi.encode(eigenPodBeacon, "")`
+
+`202: abi.encode(eigenPodBeacon, "")`
+
