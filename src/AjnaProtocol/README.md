@@ -2,6 +2,8 @@
 
 ## LINK: https://code4rena.com/contests/2023-05-ajna-protocol
 
+## White paper: https://www.ajna.finance/pdf/Ajna_Protocol_Whitepaper_03-10-2023.pdf
+
 ## Descripcion:
 
 The Ajna protocol facilita el préstamos seguro (Loan) entre particulares sin la necesidad de un tercero o protocolo de autoridad 
