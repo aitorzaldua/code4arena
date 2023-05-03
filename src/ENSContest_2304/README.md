@@ -16,7 +16,7 @@
 
     3.4.- Si están agrupadas, la notación normal es tal que "13..21", es decir, hay variables de la 13 a la 21.
 
-### 4.- Vulnerabilidad 2: emit 
+### 4.- Vulnerabilidad 2: emit
 
     4.1.- Buscar la palabra emit
 
@@ -32,7 +32,7 @@
 
     5.3.- Ahora hay que buscar esa palabra en el resto del contrato, apuntar la linea.
 
-### 6.- Vulnerabilidad 4: this.balance() puede manipularse
+### 6.- Vulnerabilidad 4: (this).balance puede manipularse
 
     6.1.- buscar en el contrato la palabra this.balance y anotar la linea.
 
