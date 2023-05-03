@@ -4,9 +4,11 @@
 
 ## White paper: https://www.ajna.finance/pdf/Ajna_Protocol_Whitepaper_03-10-2023.pdf
 
+## Ejemplo de auditoria: https://www.youtube.com/watch?v=X9DTJJGDg7c
+
 ## Descripcion:
 
-The Ajna protocol facilita el préstamos seguro (Loan) entre particulares sin la necesidad de un tercero o protocolo de autoridad 
+The Ajna protocol facilita el prestamos seguro (Loan) entre particulares sin la necesidad de un tercero o protocolo de autoridad
 y sin el cobro de comisiones externas.
 
 
