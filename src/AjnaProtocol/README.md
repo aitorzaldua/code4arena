@@ -8,13 +8,13 @@
 
 ## Descripcion:
 
-The Ajna protocol facilita el prestamos seguro (Loan) entre particulares sin la necesidad de un tercero o protocolo de autoridad
+The Ajna protocol facilita el prestamo seguro (Loan) entre particulares sin la necesidad de un tercero o protocolo de autoridad
 y sin el cobro de comisiones externas.
 
 
 ## GAS SAVING:
 
-### 1.- Uso de `memory` o `storage` para `structs`
+### 1.- Uso de `memory` o `storage` para `struct`
 
 1.1.- Un struct es una variable con varios campos, por ejemplo:
 
