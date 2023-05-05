@@ -45,3 +45,10 @@ Contract: https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-grants/src/g
 
 `67: token.safeTransferFrom(msg.sender, address(this), fundingAmount_);`
 
+Contract: https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-core/src/RewardsManager.sol
+
+`250: IERC721(address(positionManager)).transferFrom(msg.sender, address(this), tokenId_);`
+
+`302: ERC721(address(positionManager)).transferFrom(address(this), msg.sender, tokenId_);`
+
+
