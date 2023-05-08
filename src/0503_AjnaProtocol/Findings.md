@@ -37,6 +37,10 @@ Contract: https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-grants/src/g
 
 `746 to 752: emit VoteCast(account_, proposalId, 1, votes_,"");`
 
+## [LOW-1] Check == !=
+
+1(1,2) - 2(35,3) - 3(24,12) - 4(1,6) - 5(2,1) - 6(12,9) - 7(4)
+
 ## [HIGH-1] transferFrom/safeTransferFrom : The `_from` parameter should be `msg.sender`
 
 Always check each `transferFrom` call in smart contracts and verify that the `_from` parameter is `msg.sender`
