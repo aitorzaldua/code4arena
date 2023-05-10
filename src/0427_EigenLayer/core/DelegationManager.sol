@@ -41,6 +41,7 @@ contract DelegationManager is Initializable, OwnableUpgradeable, Pausable, Deleg
         DelegationManagerStorage(_strategyManager, _slasher)
     {
         _disableInitializers();
+        // @audit
         ORIGINAL_CHAIN_ID = block.chainid;
     }
 
