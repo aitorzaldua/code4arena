@@ -13,6 +13,10 @@ Contract: https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-grants/src/g
 
 `746 to 752: emit VoteCast(account_, proposalId, 1, votes_,"");`
 
+### Recomendation:
+
+Remove the constants => 1 and ""
+
 
 ## [LOW-1] Different pragma directives are used
 
@@ -30,23 +34,11 @@ https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-core/src/RewardsManage
 
 ### Contracts with version 0.8.16:
 
-https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-grants/src/grants/GrantFund.sol
+All except the 2 mentioned above.
 
-https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-grants/src/grants/base/Funding.sol
+### Recomendation:
 
-https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-grants/src/grants/base/ExtraordinaryFunding.sol
-
-https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-grants/src/grants/base/StandardFunding.sol
-
-https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-grants/src/grants/libraries/Maths.sol
-
-https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-grants/src/grants/interfaces/IGrantFund.sol
-
-https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-grants/src/grants/interfaces/IFunding.sol
-
-https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-grants/src/grants/interfaces/IExtraordinaryFunding.sol
-
-https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-grants/src/grants/interfaces/IStandardFunding.sol
+Set all contracts to the same version, ideally the higher version, and test and deploy with it.
 
 
 
