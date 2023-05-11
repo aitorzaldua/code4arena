@@ -17,7 +17,7 @@ Contract: https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-grants/src/g
 
 Remove the constants => 1 and ""
 
-## [GAS-2] Using delete statement can save gas
+## [GAS-2] Using `delete` statement can save gas
 
 Setting a variable = 0 should cost 2900 gas by calling G_SReset.
 
@@ -32,6 +32,10 @@ Reference 2: https://github.com/wolflo/evm-opcodes/blob/main/gas.md#a7-sstore
 Contract: https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-core/src/PositionManager.sol
 
 `197: position.lps = 0;`
+
+### Recomendation: use `delete`instead of `= 0`
+
+`197: delete position.lps;`
 
 ## [LOW-1] Different pragma directives are used
 
