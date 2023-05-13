@@ -1,6 +1,6 @@
 # Overview
 
-Venus es un DeFi AMM (algorith money market) que funciona en la BNB Chain.
+Venus es un DeFi AMM (algorithm money market) que funciona en la BNB Chain.
 
 Los fondos de préstamos descentralizados (Decentralized Lending Pools) son muy similares a los servicios de préstamos tradicionales ofrecidos por los bancos, salvo que son ofrecidos por plataformas descentralizadas P2P, es decir, por partículares.
 
